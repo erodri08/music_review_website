@@ -3,8 +3,10 @@
    ============================================ */
 
 /* ── RESOLVE ASSET BASE PATH based on folder depth ── */
-const _pathDepth = (window.location.pathname.match(/\//g) || []).length;
-const _base = _pathDepth <= 1 ? '' : '../../';
+// Count non-empty, non-filename path segments to determine nesting depth.
+// e.g. "/" or "/repo/" → depth 0 (root); "/repo/articles/music/x.html" → depth 2
+const _pathSegments = window.location.pathname.replace(/^\//, '').split('/').filter(s => s && !s.endsWith('.html'));
+const _base = _pathSegments.length <= 1 ? '' : '../../';
 
 /* ================================================================
    CUSTOM CURSOR
@@ -40,29 +42,23 @@ const _base = _pathDepth <= 1 ? '' : '../../';
     }
   });
 
-  // Place a transparent shield over every iframe so mousemove keeps firing
-  // when the cursor crosses into iframe territory (e.g. Spotify embed).
+  // Keep the custom cursor visible when hovering iframes by tracking
+  // mousemove on the wrapper element. The iframe itself is not overlaid
+  // with any blocking element so clicks pass through normally.
   function shieldIframes() {
     document.querySelectorAll('iframe').forEach(iframe => {
       if (iframe.dataset.shielded) return;
       iframe.dataset.shielded = '1';
-      const shield = document.createElement('div');
-      shield.style.cssText = `
-        position:absolute; inset:0; z-index:1;
-        pointer-events:all; background:transparent;
-      `;
-      // The iframe's offsetParent must be position:relative
       const wrapper = iframe.parentElement;
       const wStyle = window.getComputedStyle(wrapper);
       if (wStyle.position === 'static') wrapper.style.position = 'relative';
-      wrapper.appendChild(shield);
 
-      // Forward mouse events from the shield to the document cursor tracker
-      shield.addEventListener('mousemove', e => {
+      // Forward mouse position from the wrapper so the cursor ring keeps moving
+      wrapper.addEventListener('mousemove', e => {
         mx = e.clientX; my = e.clientY;
         document.body.classList.remove('cursor-hover');
       });
-      shield.addEventListener('mouseleave', () => {
+      wrapper.addEventListener('mouseleave', () => {
         document.body.classList.remove('cursor-hover');
       });
     });
