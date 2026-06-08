@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Film — Ethan's Entertainment Reviews</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html"><span>Ethan's</span> Entertainment Reviews</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="404.html">Film</a></li> <!-- Temporarily set to 404 page while this page is in development -->
+      <li><a href="404.html">TV</a></li> <!-- Temporarily set to 404 page while this page is in development -->
+    </ul>
+    <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO — movie posters float and repel, film-grain hover effect -->
+  <header class="page-hero film-hero">
+    <div class="page-hero-stage">
+      <img class="ph-img" src="assets/movies-tv/poster1.jpg"  alt="">
+      <img class="ph-img" src="assets/movies-tv/poster2.jpg"  alt="">
+      <img class="ph-img" src="assets/movies-tv/poster3.jpg"  alt="">
+      <img class="ph-img" src="assets/movies-tv/poster4.webp" alt="">
+    </div>
+    <div class="page-hero-inner">
+      <h1>Film</h1>
+      <p>What's worth watching — and what isn't.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="site-wrapper">
+      <section class="articles-section">
+
+        <!--
+        HOW TO ADD A NEW FILM ITEM
+        1. Copy an <article class="article-item"> block below.
+        2. Set badge-review for a review, badge-article for a general piece.
+        3. Put poster/stills in assets/movies-tv/
+        4. Link to articles/movies-tv/your-file.html
+        5. Most recent at the top.
+        -->
+
+        <div class="articles-list">
+
+          <article class="article-item" id="film-placeholder-1">
+            <div class="article-item-body">
+              <div class="article-item-top">
+                <span class="article-num">01</span>
+                <span class="content-badge badge-review">Review</span>
+              </div>
+              <h2 class="article-item-title">Coming Soon — First Film Review</h2>
+              <p class="article-item-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tempor congue, neque nisi dapibus augue, sed auctor nisl neque vel libero. Duis efficitur nisl vel augue malesuada.</p>
+              <div class="article-item-meta">
+                <span>Dir. Lorem Ipsum</span>
+                <span class="dot">·</span>
+                <span class="content-date">2025</span>
+              </div>
+              <a href="articles/movies-tv/film-placeholder-1.html" class="read-more">Read Full Review</a>
+            </div>
+            <div class="article-item-media">
+              <img src="assets/movies-tv/poster1.jpg" alt="Film poster" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <a href="articles/movies-tv/film-placeholder-1.html" class="article-item-link" aria-label="Read film review 1"></a>
+          </article>
+
+          <article class="article-item" id="film-placeholder-2">
+            <div class="article-item-body">
+              <div class="article-item-top">
+                <span class="article-num">02</span>
+                <span class="content-badge badge-article">Article</span>
+              </div>
+              <h2 class="article-item-title">Coming Soon — First Film Article</h2>
+              <p class="article-item-excerpt">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Nulla facilisi. Proin aliquam eros eget turpis vestibulum, vel interdum lacus laoreet.</p>
+              <div class="article-item-meta">
+                <span class="content-date">2025</span>
+              </div>
+              <a href="articles/movies-tv/film-placeholder-2.html" class="read-more">Read Article</a>
+            </div>
+            <div class="article-item-media">
+              <img src="assets/movies-tv/poster2.jpg" alt="Film poster" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <a href="articles/movies-tv/film-placeholder-2.html" class="article-item-link" aria-label="Read film article 2"></a>
+          </article>
+
+          <!-- ADD MORE FILM ITEMS HERE -->
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-wrapper">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="nav-logo" href="index.html"><span>Ethan's</span> Entertainment Reviews</a>
+          <p>A personal blog covering music, live shows, film, and television.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="404.html">Film</a></li> <!-- Temporarily set to 404 page while this page is in development -->
+            <li><a href="404.html">TV</a></li> <!-- Temporarily set to 404 page while this page is in development -->
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>ethansmusicreviews@email.com</li>
+            <li>123-456-789</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© Ethan Rodrigues</span>
+        <span>Ethan's Entertainment Reviews</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

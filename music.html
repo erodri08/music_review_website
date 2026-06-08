@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music — Ethan's Entertainment Reviews</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html"><span>Ethan's</span> Entertainment Reviews</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="404.html">Film</a></li> <!-- Temporarily set to 404 page while this page is in development -->
+      <li><a href="404.html">TV</a></li> <!-- Temporarily set to 404 page while this page is in development -->
+    </ul>
+    <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <header class="page-hero music-hero">
+    <div class="page-hero-stage">
+      <img class="ph-img" src="assets/albums/blond.png"        alt="">
+      <img class="ph-img" src="assets/albums/vespertine.png"   alt="">
+      <img class="ph-img" src="assets/albums/lemonade.png"     alt="">
+      <img class="ph-img" src="assets/albums/rayoflight.png"   alt="">
+      <img class="ph-img" src="assets/albums/miseducation.png" alt="">
+      <img class="ph-img" src="assets/albums/mmtbs.png"        alt="">
+      <img class="ph-img" src="assets/albums/dummy.png"        alt="">
+      <img class="ph-img" src="assets/albums/igor.png"         alt="">
+    </div>
+    <div class="page-hero-inner">
+      <h1>Music</h1>
+      <p>Concert reviews, album write-ups, and everything worth listening to.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="site-wrapper">
+      <section class="articles-section">
+
+        <!--
+        HOW TO ADD A NEW MUSIC ITEM
+        1. Copy an <article class="article-item"> block.
+        2. Set badges: badge-review or badge-article, plus badge-concert for concerts.
+        3. Update article-num, title, excerpt (first sentence or two of the article),
+           date in content-date, image src, and both href links.
+        4. Place the newest items at the TOP of this list.
+        -->
+
+        <div class="articles-list">
+
+          <!-- 01 — FKA Twigs (most recent) -->
+          <article class="article-item" id="fka-twigs">
+            <div class="article-item-body">
+              <div class="article-item-top">
+                <span class="article-num">01</span>
+                <span class="content-badge badge-review">Review</span>
+                <span class="content-badge badge-concert">Concert</span>
+              </div>
+              <h2 class="article-item-title">FKA Twigs — Body High Tour</h2>
+              <p class="article-item-excerpt">FKA Twigs brought her Body High Tour to Toronto's Coca-Cola Coliseum on March 24, 2026, fresh off the release of her acclaimed sister albums <em>Eusexua</em> (2024) and <em>Afterglow</em> (2025). The show arrived with the added weight of her 2025 North American tour being cancelled due to visa issues, making this concert feel like a long-awaited reckoning for her fans in Toronto.</p>
+              <div class="article-item-meta">
+                <span>Coca-Cola Coliseum, Toronto</span>
+                <span class="dot">·</span>
+                <span class="content-date">March 24, 2026</span>
+              </div>
+              <a href="articles/concerts/fka-twigs.html" class="read-more">Read Full Review</a>
+            </div>
+            <div class="article-item-media">
+              <img src="assets/concerts/twigs.jpg" alt="FKA Twigs on stage" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <a href="articles/concerts/fka-twigs.html" class="article-item-link" aria-label="Read FKA Twigs review"></a>
+          </article>
+
+          <!-- 02 — Osheaga -->
+          <article class="article-item" id="osheaga">
+            <div class="article-item-body">
+              <div class="article-item-top">
+                <span class="article-num">02</span>
+                <span class="content-badge badge-review">Review</span>
+                <span class="content-badge badge-concert">Concert</span>
+              </div>
+              <h2 class="article-item-title">Osheaga Festival 2025 — Tyler, the Creator Headlines</h2>
+              <p class="article-item-excerpt">A five hour trip to Montreal and standing in the hot sun for almost ten hours is not something I would normally commit to for just one day of music. But when Tyler the Creator dropped his new album <em>Don't Tap The Glass</em> just a week prior, being among the first to hear those songs live became an opportunity I couldn't pass up.</p>
+              <div class="article-item-meta">
+                <span>Parc Jean-Drapeau, Montreal</span>
+                <span class="dot">·</span>
+                <span class="content-date">August 3, 2025</span>
+              </div>
+              <a href="articles/concerts/osheaga-2025.html" class="read-more">Read Full Review</a>
+            </div>
+            <div class="article-item-media">
+              <img src="assets/concerts/tyler.jpg" alt="Tyler the Creator at Osheaga" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <a href="articles/concerts/osheaga-2025.html" class="article-item-link" aria-label="Read Osheaga 2025 review"></a>
+          </article>
+
+          <!-- 03 — Grand National Tour -->
+          <article class="article-item" id="kendrick-sza">
+            <div class="article-item-body">
+              <div class="article-item-top">
+                <span class="article-num">03</span>
+                <span class="content-badge badge-review">Review</span>
+                <span class="content-badge badge-concert">Concert</span>
+              </div>
+              <h2 class="article-item-title">Kendrick Lamar &amp; SZA — The Grand National Tour</h2>
+              <p class="article-item-excerpt">This concert felt like it was made just for me, tailored to my interests. On the night of my 20th birthday, two of my favorite artists of all time, Kendrick Lamar and SZA, shared the stage at the Rogers Centre in Toronto for The Grand National Tour. I could not have planned a better birthday gift for myself.</p>
+              <div class="article-item-meta">
+                <span>Rogers Centre, Toronto</span>
+                <span class="dot">·</span>
+                <span class="content-date">June 21, 2025</span>
+              </div>
+              <a href="articles/concerts/grand-national-tour.html" class="read-more">Read Full Review</a>
+            </div>
+            <div class="article-item-media">
+              <img src="assets/concerts/kendricksza.jpg" alt="Kendrick and SZA on stage" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <a href="articles/concerts/grand-national-tour.html" class="article-item-link" aria-label="Read Grand National Tour review"></a>
+          </article>
+
+          <!-- 04 — Favorite Albums Overview -->
+          <article class="article-item" id="favorite-albums">
+            <div class="article-item-body">
+              <div class="article-item-top">
+                <span class="article-num">04</span>
+                <span class="content-badge badge-article">Article</span>
+              </div>
+              <h2 class="article-item-title">My Top 10 Albums of All Time — An Overview</h2>
+              <p class="article-item-excerpt">From Frank Ocean's three-year disappearing act to Björk's frozen intimacy, Beyoncé's confessional Lemonade to The Beatles' studio revolution — ten records that define my taste in full, plus genre-sorted honourable mentions across hip-hop, R&amp;B, pop, indie, electronic, and rock.</p>
+              <div class="article-item-meta">
+                <span class="content-date">January 10, 2025</span>
+              </div>
+              <a href="articles/music/favorite-albums.html" class="read-more">Read Article</a>
+            </div>
+            <div class="article-item-media">
+              <img src="assets/albums/blond.png" alt="Blonde album cover" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <a href="articles/music/favorite-albums.html" class="article-item-link" aria-label="Read favorite albums article"></a>
+          </article>
+
+          <!-- 05 — Blonde -->
+          <article class="article-item" id="review-blonde">
+            <div class="article-item-body">
+              <div class="article-item-top">
+                <span class="article-num">05</span>
+                <span class="content-badge badge-review">Review</span>
+              </div>
+              <h2 class="article-item-title">Blonde — Frank Ocean</h2>
+              <p class="article-item-excerpt">In 2013, it seemed as if Frank Ocean was on the brink of becoming the next big name in pop music. After a Grammy winning debut album, a successful North American tour, and collaborations with Beyoncé, Jay-Z, and Kanye West, the anticipation was extremely high for his sophomore album. Then he disappeared for three years.</p>
+              <div class="article-item-meta">
+                <span>Released 2016</span>
+                <span class="dot">·</span>
+                <span class="content-date">December 5, 2024</span>
+              </div>
+              <a href="articles/music/review-blonde.html" class="read-more">Read Review</a>
+            </div>
+            <div class="article-item-media">
+              <img src="assets/albums/blond.png" alt="Blonde by Frank Ocean" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <a href="articles/music/review-blonde.html" class="article-item-link" aria-label="Read Blonde review"></a>
+          </article>
+
+          <!-- 06 — Vespertine -->
+          <article class="article-item" id="review-vespertine">
+            <div class="article-item-body">
+              <div class="article-item-top">
+                <span class="article-num">06</span>
+                <span class="content-badge badge-review">Review</span>
+              </div>
+              <h2 class="article-item-title">Vespertine — Björk</h2>
+              <p class="article-item-excerpt">Coming off a successful run of three incredible solo albums in the nineties, Björk had established herself as one of the most eccentric, innovative and creative artists of her generation. In August 2001, she released Vespertine — an album that traded the bold, confrontational energy of her previous work for something far more intimate.</p>
+              <div class="article-item-meta">
+                <span>Released 2001</span>
+                <span class="dot">·</span>
+                <span class="content-date">November 18, 2024</span>
+              </div>
+              <a href="articles/music/review-vespertine.html" class="read-more">Read Review</a>
+            </div>
+            <div class="article-item-media">
+              <img src="assets/albums/vespertine.png" alt="Vespertine by Björk" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <a href="articles/music/review-vespertine.html" class="article-item-link" aria-label="Read Vespertine review"></a>
+          </article>
+
+          <!-- 07 — Lemonade -->
+          <article class="article-item" id="review-lemonade">
+            <div class="article-item-body">
+              <div class="article-item-top">
+                <span class="article-num">07</span>
+                <span class="content-badge badge-review">Review</span>
+              </div>
+              <h2 class="article-item-title">Lemonade — Beyoncé</h2>
+              <p class="article-item-excerpt">Few pop artists have remained in the spotlight for across three decades and managed to continuously innovate and engage culture like Beyoncé. Prior to the release of her 2016 project Lemonade, a leaked elevator security tape had ignited a firestorm of speculation about her marriage to Jay-Z that dominated tabloids for months.</p>
+              <div class="article-item-meta">
+                <span>Released 2016</span>
+                <span class="dot">·</span>
+                <span class="content-date">October 30, 2024</span>
+              </div>
+              <a href="articles/music/review-lemonade.html" class="read-more">Read Review</a>
+            </div>
+            <div class="article-item-media">
+              <img src="assets/albums/lemonade.png" alt="Lemonade by Beyoncé" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <a href="articles/music/review-lemonade.html" class="article-item-link" aria-label="Read Lemonade review"></a>
+          </article>
+
+          <!-- 08 — Ray of Light -->
+          <article class="article-item" id="review-rayoflight">
+            <div class="article-item-body">
+              <div class="article-item-top">
+                <span class="article-num">08</span>
+                <span class="content-badge badge-review">Review</span>
+              </div>
+              <h2 class="article-item-title">Ray of Light — Madonna</h2>
+              <p class="article-item-excerpt">In the mid-nineties, Madonna found herself at a crossroads. She had been dominating pop music as a provocateur and had gained an extremely loyal following, but also many critics. In 1996, the birth of her daughter sparked a profound and personal artistic shift that would lead to one of the most surprising reinventions in pop history.</p>
+              <div class="article-item-meta">
+                <span>Released 1998</span>
+                <span class="dot">·</span>
+                <span class="content-date">October 2, 2024</span>
+              </div>
+              <a href="articles/music/review-rayoflight.html" class="read-more">Read Review</a>
+            </div>
+            <div class="article-item-media">
+              <img src="assets/albums/rayoflight.png" alt="Ray of Light by Madonna" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <a href="articles/music/review-rayoflight.html" class="article-item-link" aria-label="Read Ray of Light review"></a>
+          </article>
+
+          <!-- 09 — Miseducation -->
+          <article class="article-item" id="review-miseducation">
+            <div class="article-item-body">
+              <div class="article-item-top">
+                <span class="article-num">09</span>
+                <span class="content-badge badge-review">Review</span>
+              </div>
+              <h2 class="article-item-title">The Miseducation of Lauryn Hill — Ms. Lauryn Hill</h2>
+              <p class="article-item-excerpt">As a member of the Fugees, Ms. Lauryn Hill had already made a name for herself with The Score. But behind the scenes, creative differences, financial tensions and a publicized breakup with bandmate Wyclef Jean created a whirlwind of turmoil — leading to her exit from the group and the making of a solo masterpiece.</p>
+              <div class="article-item-meta">
+                <span>Released 1998</span>
+                <span class="dot">·</span>
+                <span class="content-date">September 14, 2024</span>
+              </div>
+              <a href="articles/music/review-miseducation.html" class="read-more">Read Review</a>
+            </div>
+            <div class="article-item-media">
+              <img src="assets/albums/miseducation.png" alt="The Miseducation of Lauryn Hill" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <a href="articles/music/review-miseducation.html" class="article-item-link" aria-label="Read Miseducation review"></a>
+          </article>
+
+          <!-- 10 — Mr. Morale -->
+          <article class="article-item" id="review-mmtbs">
+            <div class="article-item-body">
+              <div class="article-item-top">
+                <span class="article-num">10</span>
+                <span class="content-badge badge-review">Review</span>
+              </div>
+              <h2 class="article-item-title">Mr. Morale &amp; The Big Steppers — Kendrick Lamar</h2>
+              <p class="article-item-excerpt">One thousand, eight hundred and fifty-five days. That is the opening line of Kendrick Lamar's 2022 album Mr. Morale &amp; the Big Steppers. Written in isolation during the COVID-19 pandemic, it arrived after a nearly five-year hiatus following his Pulitzer Prize-winning album DAMN — and it was nothing like what fans expected.</p>
+              <div class="article-item-meta">
+                <span>Released 2022</span>
+                <span class="dot">·</span>
+                <span class="content-date">August 22, 2024</span>
+              </div>
+              <a href="articles/music/review-mmtbs.html" class="read-more">Read Review</a>
+            </div>
+            <div class="article-item-media">
+              <img src="assets/albums/mmtbs.png" alt="Mr. Morale and The Big Steppers" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <a href="articles/music/review-mmtbs.html" class="article-item-link" aria-label="Read Mr. Morale review"></a>
+          </article>
+
+          <!-- 11 — Dummy -->
+          <article class="article-item" id="review-dummy">
+            <div class="article-item-body">
+              <div class="article-item-top">
+                <span class="article-num">11</span>
+                <span class="content-badge badge-review">Review</span>
+              </div>
+              <h2 class="article-item-title">Dummy — Portishead</h2>
+              <p class="article-item-excerpt">In the early nineties, singer Beth Gibbons, producer Geoff Barrow and guitarist Adrian Utley came together to form the band Portishead. In 1994, they released their debut album Dummy, which became a landmark in the trip-hop genre. Across eleven tracks, it unfolds like a black and white film noir translated into sound.</p>
+              <div class="article-item-meta">
+                <span>Released 1994</span>
+                <span class="dot">·</span>
+                <span class="content-date">July 9, 2024</span>
+              </div>
+              <a href="articles/music/review-dummy.html" class="read-more">Read Review</a>
+            </div>
+            <div class="article-item-media">
+              <img src="assets/albums/dummy.png" alt="Dummy by Portishead" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <a href="articles/music/review-dummy.html" class="article-item-link" aria-label="Read Dummy review"></a>
+          </article>
+
+          <!-- 12 — IGOR -->
+          <article class="article-item" id="review-igor">
+            <div class="article-item-body">
+              <div class="article-item-top">
+                <span class="article-num">12</span>
+                <span class="content-badge badge-review">Review</span>
+              </div>
+              <h2 class="article-item-title">IGOR — Tyler, the Creator</h2>
+              <p class="article-item-excerpt">In the early 2010's, Tyler, the Creator had cultivated a controversial image with a strong, but relatively small, cult audience. As the leader of the Los Angeles based music collective Odd Future, his music was edgy and daring, with a clear throughline of rebellion and youthful angst. In May 2019, he released IGOR — an album so sonically adventurous it defies genre categorization.</p>
+              <div class="article-item-meta">
+                <span>Released 2019</span>
+                <span class="dot">·</span>
+                <span class="content-date">June 1, 2024</span>
+              </div>
+              <a href="articles/music/review-igor.html" class="read-more">Read Review</a>
+            </div>
+            <div class="article-item-media">
+              <img src="assets/albums/igor.png" alt="IGOR by Tyler, the Creator" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <a href="articles/music/review-igor.html" class="article-item-link" aria-label="Read IGOR review"></a>
+          </article>
+
+          <!-- 13 — Late Registration -->
+          <article class="article-item" id="review-latereg">
+            <div class="article-item-body">
+              <div class="article-item-top">
+                <span class="article-num">13</span>
+                <span class="content-badge badge-review">Review</span>
+              </div>
+              <h2 class="article-item-title">Late Registration — Kanye West</h2>
+              <p class="article-item-excerpt">Before talking about Late Registration, I think it is important to acknowledge current controversies surrounding Kanye West. My appreciation of this album is purely based on the musical talent on display — not an endorsement of the harmful beliefs he has expressed in recent years. With that said, this is one of the greatest rap albums ever made.</p>
+              <div class="article-item-meta">
+                <span>Released 2005</span>
+                <span class="dot">·</span>
+                <span class="content-date">April 17, 2024</span>
+              </div>
+              <a href="articles/music/review-latereg.html" class="read-more">Read Review</a>
+            </div>
+            <div class="article-item-media">
+              <img src="assets/albums/lateregistration.png" alt="Late Registration by Kanye West" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <a href="articles/music/review-latereg.html" class="article-item-link" aria-label="Read Late Registration review"></a>
+          </article>
+
+          <!-- 14 — Revolver -->
+          <article class="article-item" id="review-revolver">
+            <div class="article-item-body">
+              <div class="article-item-top">
+                <span class="article-num">14</span>
+                <span class="content-badge badge-review">Review</span>
+              </div>
+              <h2 class="article-item-title">Revolver — The Beatles</h2>
+              <p class="article-item-excerpt">By 1966, The Beatles had already taken over the world. Emerging from the Beatlemania craze as the most famous musicians on the planet, they had transformed the face of pop music. Their immense fame had also come with exhaustion — and in August 1966, they released an album that signalled a profound new direction.</p>
+              <div class="article-item-meta">
+                <span>Released 1966</span>
+                <span class="dot">·</span>
+                <span class="content-date">March 3, 2024</span>
+              </div>
+              <a href="articles/music/review-revolver.html" class="read-more">Read Review</a>
+            </div>
+            <div class="article-item-media">
+              <img src="assets/albums/revolver.png" alt="Revolver by The Beatles" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <a href="articles/music/review-revolver.html" class="article-item-link" aria-label="Read Revolver review"></a>
+          </article>
+
+          <!-- ADD MORE MUSIC ITEMS HERE — newest at top, renumber as you go -->
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-wrapper">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="nav-logo" href="index.html"><span>Ethan's</span> Entertainment Reviews</a>
+          <p>A personal blog covering music, live shows, film, and television.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="404.html">Film</a></li> <!-- Temporarily set to 404 page while this page is in development -->
+            <li><a href="404.html">TV</a></li> <!-- Temporarily set to 404 page while this page is in development -->
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>ethansmusicreviews@email.com</li>
+            <li>123-456-789</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© Ethan Rodrigues</span>
+        <span>Ethan's Entertainment Reviews</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

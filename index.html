@@ -1,90 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <title>Ethan's music Reviews</title>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="This website is a blog where I share music reviews and reccomendations.">
-        <meta name="author" content="Ethan Rodrigues">
-
-        <link rel="stylesheet" href="webstyle.css">
-    </head>
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ethan's Entertainment Reviews</title>
+  <meta name="description" content="A blog covering music, concerts, movies, and TV — honest reviews and personal picks.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
 
-    <header>
-        <header>
-            <img src="banner.png" alt="Ethans Music Reviews Website Banner">
-            <h1>
-                Ethan's Music Reviews
-            </h1>
-        </header>
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html"><span>Ethan's</span> Entertainment Reviews</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="404.html">Film</a></li> <!-- Temporarily set to 404 page while this page is in development -->
+      <li><a href="404.html">TV</a></li> <!-- Temporarily set to 404 page while this page is in development -->
+    </ul>
+    <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-        <nav class ="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="one.html">Concert Reviews</a></li>
-                <li><a href="two.html">My Top 10 Albums</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- HERO — full viewport -->
+  <section class="hero">
+    <div class="hero-stage"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Music · Concerts · Film · TV</div>
+      <h1 class="hero-title">Ethan's <em>Entertainment</em><br>Reviews</h1>
+      <p class="hero-sub">Honest takes on music, live shows, movies, and everything in between.</p>
+      <div class="hero-cta-wrap">
+        <a class="hero-cta" href="#latest">Read Latest Reviews</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">Scroll</div>
+  </section>
 
+  <main>
+    <div class="site-wrapper">
 
-    <article class="content">
-        <h2>Welcome to Ethan's Music Reviews!</h2>
-        <p> 
-            This is a blog where I share my opinions on various music related topics. On one page, I have some reviews of concerts I have recently attended. On the other page, I have a list of my personal top 10 albums, as well as a few other album recommendations, grouped by genre so you can find which ones may appeal to you the most. Use the buttons in the navigation bar above to get started!
-        </p>
-        <h3>
+      <!-- LATEST REVIEWS -->
+      <section class="featured-section" id="latest">
+        <div class="section-label">
+          <span class="section-tag">Latest</span>
+          <h2>Recent Reviews &amp; Articles</h2>
+        </div>
 
-        </h3>
-        
+        <div class="featured-grid">
 
-    </article>
+          <!-- MAIN CARD — FKA Twigs, most recent -->
+          <article class="card card-main">
+            <div class="card-thumb">
+              <img src="assets/concerts/twigs.jpg" alt="FKA Twigs Body High Tour" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="content-badge badge-review">Review</span>
+                <span class="content-badge badge-concert">Concert</span>
+              </div>
+              <h3 class="card-title">FKA Twigs — Body High Tour</h3>
+              <p class="card-excerpt">FKA Twigs brought her Body High Tour to Toronto's Coca-Cola Coliseum on March 24, 2026, fresh off the release of her acclaimed sister albums <em>Eusexua</em> (2024) and <em>Afterglow</em> (2025). The show arrived with the added weight of her 2025 North American tour being cancelled due to visa issues, making this concert feel like a long-awaited reckoning for her fans in Toronto.</p>
+              <div class="card-meta">
+                <span>Coca-Cola Coliseum, Toronto</span>
+                <span class="dot">·</span>
+                <span class="content-date">March 24, 2026</span>
+              </div>
+            </div>
+            <a href="articles/concerts/fka-twigs.html" class="card-link" aria-label="Read FKA Twigs review"></a>
+          </article>
 
-    <article class="content">
-        <h2>Featured Song</h2>
-        <p>Today's featured song is Pearls by Sade. This song is one of my all time favorites! It was released on Sade's 1992 album "Love Deluxe". It touches upon themes of inequality, putting the strength and quiet dignity of human resilience on full display against the backdrop of suffering. </p>
-        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4J7s7j5ulwElPG7HaGQDXR?utm_source=generator" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <h3>
+          <!-- SIDE CARD 1 — Osheaga -->
+          <article class="card card-side">
+            <div class="card-thumb">
+              <img src="assets/concerts/tyler.jpg" alt="Tyler at Osheaga" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="content-badge badge-review">Review</span>
+                <span class="content-badge badge-concert">Concert</span>
+              </div>
+              <h3 class="card-title">Osheaga 2025 — Tyler, the Creator</h3>
+              <p class="card-excerpt">A five hour trip to Montreal and standing in the hot sun for almost ten hours is not something I would normally commit to for just one day of music...</p>
+              <div class="card-meta">
+                <span class="content-date">August 3, 2025</span>
+              </div>
+            </div>
+            <a href="articles/concerts/osheaga-2025.html" class="card-link" aria-label="Read Osheaga 2025 review"></a>
+          </article>
 
-        </h3>
-        
+          <!-- SIDE CARD 2 — Grand National Tour -->
+          <article class="card card-side">
+            <div class="card-thumb">
+              <img src="assets/concerts/kendricksza.jpg" alt="Kendrick and SZA on stage" onerror="this.parentElement.style.background='#1a1714';this.style.display='none'">
+            </div>
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="content-badge badge-review">Review</span>
+                <span class="content-badge badge-concert">Concert</span>
+              </div>
+              <h3 class="card-title">Kendrick Lamar &amp; SZA — Grand National Tour</h3>
+              <p class="card-excerpt">This concert felt like it was made just for me, tailored to my interests. On the night of my 20th birthday, two of my favorite artists of all time shared the stage...</p>
+              <div class="card-meta">
+                <span class="content-date">June 21, 2025</span>
+              </div>
+            </div>
+            <a href="articles/concerts/grand-national-tour.html" class="card-link" aria-label="Read Grand National Tour review"></a>
+          </article>
 
-    </article>
+        </div>
 
-    <footer>
+        <!-- FEATURED SONG -->
+        <div class="featured-song">
+          <div>
+            <span class="featured-song-label">Featured Song</span>
+            <h3>Pearls — Sade</h3>
+            <p>One of my all-time favourites. Released on Sade's 1992 album <em>Love Deluxe</em>, it touches on inequality with quiet dignity and resilience that I find impossible to shake.</p>
+          </div>
+          <iframe src="https://open.spotify.com/embed/track/4J7s7j5ulwElPG7HaGQDXR?utm_source=generator"
+                  height="352" frameborder="0"
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy" title="Pearls by Sade on Spotify"></iframe>
+        </div>
 
-        <h3> Contact Us!</h3>
-        <address>
-            <ul>
-                <li>Email: ethansmusicreviews@email.com</li>
-                <li>Phone: 123-456-789</li>
-            </ul>
-        </address>
+      </section>
+    </div>
+  </main>
 
-
-        <h3> Banner Image Citations</h3>
-        <ul>
-            <li>
-              Compact disc PNG, CD PNG. (2026). Compact disc PNG, CD PNG image with transparent background. 
-              <a href="https://pngimg.com/image/102166" target="_blank">Pngimg.com</a>
-            </li>
-          
-            <li>
-              headphones PNG. (2026). headphones PNG image with transparent background. 
-              <a href="https://pngimg.com/image/101984" target="_blank">Pngimg.com</a>
-            </li>
-          
-            <li>
-              Vinyl record PNG. (2017). Vinyl record PNG image with transparent background. 
-              <a href="https://pngimg.com/image/82648" target="_blank">Pngimg.com</a>
-            </li>
+  <footer class="site-footer">
+    <div class="site-wrapper">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="nav-logo" href="index.html"><span>Ethan's</span> Entertainment Reviews</a>
+          <p>A personal blog covering music, live shows, film, and television. All opinions are my own.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="music.html">Music</a></li> 
+            <li><a href="404.html">Film</a></li> <!-- Temporarily set to 404 page while this page is in development -->
+            <li><a href="404.html">TV</a></li> <!-- Temporarily set to 404 page while this page is in development -->
           </ul>
-    </footer>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>ethansmusicreviews@email.com</li>
+            <li>123-456-789</li>
+          </ul>
+          <h4 style="margin-top:1.5rem">Image Credits</h4>
+          <ul>
+            <li><a href="https://pngimg.com/image/102166" target="_blank" rel="noopener">CD — pngimg.com</a></li>
+            <li><a href="https://pngimg.com/image/82648" target="_blank" rel="noopener">Vinyl — pngimg.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© Ethan Rodrigues</span>
+        <span>Ethan's Entertainment Reviews</span>
+      </div>
+    </div>
+  </footer>
 
+  <script src="js/main.js"></script>
 </body>
-
 </html>

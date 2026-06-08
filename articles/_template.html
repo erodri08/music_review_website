@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARTICLE TITLE | Ethan's Entertainment Reviews</title>
+  <meta name="description" content="SHORT DESCRIPTION">
+  <!--
+    PATH NOTE: This file lives in articles/concerts/, articles/music/, or articles/movies-tv/
+    All paths below use ../../ to go two levels up to the site root.
+  -->
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="article-page">
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="../../index.html"><span>Ethan's</span> Entertainment Reviews</a>
+    <ul class="nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../music.html">Music</a></li>
+      <li><a href="../../films.html">Film</a></li>
+      <li><a href="../../tv.html">TV</a></li>
+    </ul>
+    <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!--
+    HERO BANNER
+    Badges: use badge-review for a review, badge-article for a general piece.
+    Also add badge-concert for concert reviews.
+    article-meta: venue/platform · date
+  -->
+  <header class="article-hero">
+    <div class="article-hero-inner">
+      <div class="article-hero-badges">
+        <span class="content-badge badge-review">Review</span>
+        <!-- <span class="content-badge badge-concert">Concert</span> -->
+        <!-- <span class="content-badge badge-article">Article</span> -->
+      </div>
+      <h1>YOUR TITLE HERE</h1>
+      <div class="article-meta">Venue or Platform · <span class="content-date">Month Year</span></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="article-body">
+
+      <!--
+        MEDIA PLACEMENT
+        ─────────────────────────────────────────────────────────────
+        Images and videos naturally wrap with text using float classes:
+
+          figure.wrap-right  → floats right, text flows left (max ~44% wide)
+          figure.wrap-left   → floats left, text flows right
+          figure.full-width  → breaks out of float, spans full column
+
+        Always add <div class="clearfix"></div> after a floated block
+        when you want the next paragraph to start below it.
+
+        Images: clicking opens the lightbox (zoom, pan, Esc to close).
+        Videos: clicking opens the lightbox video player — no extra code needed.
+                Do NOT add "controls" to the <video> tag; the JS handles it.
+
+        Asset paths:
+          concerts  → ../../assets/concerts/yourfile.jpg
+          music     → ../../assets/albums/yourfile.png
+          film/tv   → ../../assets/movies-tv/yourfile.jpg
+        ─────────────────────────────────────────────────────────────
+      -->
+
+      <!-- EXAMPLE: image floated right, text wraps left -->
+      <figure class="wrap-right">
+        <img src="../../assets/concerts/YOUR-IMAGE.jpg" alt="DESCRIBE THE IMAGE"
+             onerror="this.style.display='none'">
+        <figcaption>Your caption here</figcaption>
+      </figure>
+
+      <p>Your first paragraph of review text goes here...</p>
+
+      <!-- EXAMPLE: video floated left -->
+      <figure class="wrap-left">
+        <video>
+          <source src="../../assets/concerts/YOUR-VIDEO.MOV" type="video/mp4">
+          <source src="../../assets/concerts/YOUR-VIDEO.MOV" type="video/quicktime">
+        </video>
+        <figcaption>Video caption</figcaption>
+      </figure>
+
+      <p>Second paragraph — this text flows beside the video above...</p>
+
+      <!-- Clear the floats before a new section -->
+      <div class="clearfix"></div>
+
+      <!-- EXAMPLE: full-width image that breaks the float -->
+      <figure class="full-width">
+        <img src="../../assets/concerts/WIDE-IMAGE.jpg" alt="DESCRIPTION"
+             onerror="this.style.display='none'">
+        <figcaption>Wide caption</figcaption>
+      </figure>
+
+      <p>Closing paragraph...</p>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-wrapper">
+      <div class="footer-bottom">
+        <span>© Ethan Rodrigues</span>
+        <span>Ethan's Entertainment Reviews</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
