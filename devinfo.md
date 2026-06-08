@@ -1,23 +1,3 @@
-# Ethan's Entertainment Reviews
-
-A personal blog covering music, concerts, film, and television.
-Built with plain HTML, CSS, and vanilla JavaScript — no frameworks, no build step.
-Open <https://erodri08.github.io/music_review_website/index.html>
-
----
-
-## What the site is
-
-| Page | URL | What it covers |
-|---|---|---|
-| Home | `index.html` | Hero with floating discs, featured cards, Spotify embed |
-| Music | `music.html` | Concert reviews + album reviews + music articles |
-| Film | `films.html` | Film reviews and articles |
-| TV | `tv.html` | Television series reviews and articles |
-
-Every listing card links to a full article page inside `articles/`.
-
----
 
 ## Folder structure
 
